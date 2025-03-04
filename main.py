@@ -567,6 +567,8 @@ assortiment_overvoorraad_analyse_7                      # het DEFINTIEVE DATAFRA
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
+server = app.server
+
 app.layout = dbc.Container([
        dbc.Row([html.H1('Winkeldochters Analyse')]),
        dbc.Row([dcc.RadioItems(id='apotheek', options=recept_ag['apotheek'].unique(), value='helpman', inline=True)]),
